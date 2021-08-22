@@ -2,3 +2,5 @@ capital - капитал
 python  - питон
 something - что-то
 type  - тип
+python - питона
+exit  - выход
