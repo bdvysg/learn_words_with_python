@@ -8,8 +8,7 @@ def translate_word(word: str):
     try:
         resp = post("https://libretranslate.de/translate", headers={"accept": "application/json",
             "Content-Type": "application/x-www-form-urlencoded"}, data=f"q={word}&source=en&target=ru")
-        translated_word = loads(resp.text)['translatedText']
-        return word, translated_word
+        return word.lower(), loads(resp.text)['translatedText'].lower()
 
     except Exception as ex:
         print(ex)
