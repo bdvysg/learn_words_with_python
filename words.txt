@@ -1,2 +1,3 @@
 understand - Понятно
 insights - идеи
+Issues - Вопросы
